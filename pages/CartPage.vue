@@ -27,6 +27,9 @@
           </div>
         </div>
       </div>
+      <div class="cart__total-price text-2xl my-6 ml-5">
+        Итого: {{getTotalPrice}}$
+      </div>
     </div>
   </div>
 </template>
@@ -39,6 +42,15 @@ const store = useProductStore();
 
 const getCart = computed(() => {
   return store.getCart;
+});
+
+const getTotalPrice = computed(() => {
+  let price = 0;
+  getCart.value.forEach(product => {
+    price += product.count * product.price;
+  });
+
+  return price;
 });
 
 const addProduct = (product) => {

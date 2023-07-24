@@ -8,4 +8,11 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
   ],
+  vite: {
+    server: {
+      fs: {
+        strict: false
+      }
+    }
+  },
 })

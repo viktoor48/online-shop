@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-import {ref, computed, onMounted} from "vue";
+import {computed, onMounted} from "vue";
 import {useProductStore} from "../stores";
 
 const store = useProductStore();
@@ -13,9 +13,10 @@ const store = useProductStore();
 const countProducts = computed(() => {
   if (store.getCart) {
     let count = 0;
-    store.getCart.forEach(product => {
-      count = count + product.count;
-    })
+    // store.getCart.forEach(product => {
+    //   count = count + product.count;
+    // })
+    count = store.getCart.length;
 
     return count;
   } else {
