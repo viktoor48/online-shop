@@ -1,14 +1,14 @@
 <template>
   <div class="container">
-    <div class="cart-wrapper">
+    <div>
       <div v-for="cart in getCart" :key="cart.id" class="cart-item flex justify-between py-4">
-        <div class="cart-item__img w-1/4">
-          <img :src="cart.image" alt="">
+        <div class="h-[156px] flex justify-center items-center w-1/4">
+          <img class="max-h-full max-w-full object-cover" :src="cart.image" alt="">
         </div>
-        <div class="cart-item__info w-2/4 flex-col justify-between flex">
+        <div class="w-2/4 flex-col justify-between flex">
           <div>
-            <div class="cart-item__title mb-2">{{cart.title}}</div>
-            <div class="cart-item__category">
+            <div class="mb-2">{{cart.title}}</div>
+            <div>
               Категория: {{ cart.category }}
             </div>
           </div>
@@ -16,18 +16,18 @@
             <button @click="removeProduct(cart)" class="p-2">Удалить</button>
           </div>
         </div>
-        <div class="cart-item__action flex flex-col justify-between w-1/4">
-          <div class="cart-item__price text-xl">
+        <div class="flex flex-col justify-between w-1/4">
+          <div class="text-xl">
             {{ cart.price }}$
           </div>
-          <div class="cart-item__count flex justify-between">
+          <div class="flex justify-between">
             <div @click="minesProduct(cart)" class="text-2xl cursor-pointer" :class="{'text-gray-300': cart.count == 1}">-</div>
             <div class="text-2xl">{{ cart.count }}</div>
             <div @click="addProduct(cart)" class="text-2xl cursor-pointer">+</div>
           </div>
         </div>
       </div>
-      <div class="cart__total-price text-2xl my-6 ml-5">
+      <div class="text-2xl my-6 ml-5">
         Итого: {{getTotalPrice}}$
       </div>
     </div>
@@ -69,20 +69,7 @@ const removeProduct = (product) => {
 </script>
 
 <style scoped>
-.cart-item__img {
-  height: 156px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.cart-item__img img {
-  object-fit: cover;
-  max-height: 100%;
-  max-width: 100%;
-}
-
 .cart-item + .cart-item {
-  border-top: 1px solid #2e475d;
+  @apply border-t-[1px] border-[#2e475d]
 }
 </style>

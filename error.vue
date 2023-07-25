@@ -12,7 +12,3 @@ const props = defineProps(['error']);
 
 const handleClearError = () => clearError({redirect: '/'});
 </script>
-
-<style scoped>
-
-</style>

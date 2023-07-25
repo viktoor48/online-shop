@@ -22,15 +22,15 @@
         <h2 class="text-lg font-semibold mb-4">Цены</h2>
         <SliderComponent :options="options" v-model="valueRange"></SliderComponent>
         <div class="filters-price__inputs w-full flex justify-between mt-4">
-          <label class="filters-price__label p-2 flex">
-            <span class="filters-price__text">от</span>
-            <input type="text" min="0" max="9999" v-model="valueRange[0]" placeholder="50" class="filters-price__input w-full">
-            <span class="filters-price__text">$</span>
+          <label class="border border-[#D9D9D9] rounded-[6px] p-2 flex">
+            <span class="mr-[5px]">от</span>
+            <input type="text" min="0" max="9999" v-model="valueRange[0]" placeholder="50" class="bg-none bg-transparent outline-none w-full">
+            <span class="mr-[5px]">$</span>
           </label>
-          <label class="filters-price__label p-2 flex">
-            <span class="filters-price__text">до</span>
-            <input type="text" min="0" max="9999" placeholder="150" v-model="valueRange[1]" class="filters-price__input w-full">
-            <span class="filters-price__text">$</span>
+          <label class="border border-[#D9D9D9] rounded-[6px] p-2 flex">
+            <span class="mr-[5px]">до</span>
+            <input type="text" min="0" max="9999" placeholder="150" v-model="valueRange[1]" class="bg-none bg-transparent outline-none w-full">
+            <span class="mr-[5px]">$</span>
           </label>
         </div>
       </div>
@@ -104,21 +104,8 @@ onMounted(async () => {
 </script>
 
 <style>
-.filters-price__label {
-  border: 1px solid #D9D9D9;
-  border-radius: 6px;
-}
-
 .filters-price__label + .filters-price__label {
-  margin-left: 10px;
+  @apply ml-[10px]
 }
 
-.filters-price__text {
-  margin-right: 5px;
-}
-
-.filters-price__input {
-  background: none;
-  outline: none;
-}
 </style>

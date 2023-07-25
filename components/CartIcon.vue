@@ -1,5 +1,5 @@
 <template>
-  <div class="cart-icon" :class="{'has-products': countProducts > 0}" :data-count="countProducts">
+  <div class="w-[24px] h-[24px] relative" :class="{'has-products': countProducts > 0}" :data-count="countProducts">
     <img src="../images/cart.svg" alt="">
   </div>
 </template>
@@ -46,17 +46,10 @@ onMounted( () => {
 </script>
 
 <style scoped>
-.cart-icon {
-  width: 24px;
-  height: 24px;
-  position: relative;
+
+.has-products::after {
+  content: attr(data-count);
+  @apply top-[-15px] right-[-5px] absolute block
 }
 
-.cart-icon.has-products::after {
-  content: attr(data-count);
-  display: block;
-  position: absolute;
-  top: -15px;
-  right: -5px;
-}
 </style>

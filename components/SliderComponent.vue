@@ -49,15 +49,14 @@ onMounted(() => {
 }
 
 .noUi-handle:after {
-  left: 15px;
+  @apply left-[15px]
 }
 
 .noUi-horizontal .noUi-handle {
-  width: 28px;
-  height: 21px;
+  @apply w-[28px] h-[21px]
 }
 
 .noUi-target {
-  height: 10px;
+  @apply h-[10px]
 }
 </style>
