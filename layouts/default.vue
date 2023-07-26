@@ -11,7 +11,7 @@
             </div>
             <ul class="flex">
               <li class="ml-[20px] cursor-pointer"><NuxtLink to="/catalogProducts">Каталог</NuxtLink></li>
-              <li class="ml-[20px] cursor-pointer flex"><NuxtLink class="mr-4px" to="/cartPage">Корзина</NuxtLink><CartIcon/></li>
+              <li class="ml-[20px] cursor-pointer flex"><NuxtLink class="mr-[4px]" to="/cartPage">Корзина</NuxtLink><CartIcon/></li>
             </ul>
           </nav>
         </div>

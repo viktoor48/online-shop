@@ -3,7 +3,6 @@ declare module 'vue' {
   export interface GlobalComponents {
     'CartIcon': typeof import("../components/CartIcon.vue")['default']
     'FilterSidebar': typeof import("../components/FilterSidebar.vue")['default']
-    'HeaderComponent': typeof import("../components/HeaderComponent.vue")['default']
     'LoadingSpinner': typeof import("../components/LoadingSpinner.vue")['default']
     'ProductItem': typeof import("../components/ProductItem.vue")['default']
     'ProductsList': typeof import("../components/ProductsList.vue")['default']
@@ -28,7 +27,6 @@ declare module 'vue' {
     'Body': typeof import("../../../../node_modules/nuxt/dist/head/runtime/components")['Body']
     'LazyCartIcon': typeof import("../components/CartIcon.vue")['default']
     'LazyFilterSidebar': typeof import("../components/FilterSidebar.vue")['default']
-    'LazyHeaderComponent': typeof import("../components/HeaderComponent.vue")['default']
     'LazyLoadingSpinner': typeof import("../components/LoadingSpinner.vue")['default']
     'LazyProductItem': typeof import("../components/ProductItem.vue")['default']
     'LazyProductsList': typeof import("../components/ProductsList.vue")['default']
@@ -56,7 +54,6 @@ declare module 'vue' {
 
 export const CartIcon: typeof import("../components/CartIcon.vue")['default']
 export const FilterSidebar: typeof import("../components/FilterSidebar.vue")['default']
-export const HeaderComponent: typeof import("../components/HeaderComponent.vue")['default']
 export const LoadingSpinner: typeof import("../components/LoadingSpinner.vue")['default']
 export const ProductItem: typeof import("../components/ProductItem.vue")['default']
 export const ProductsList: typeof import("../components/ProductsList.vue")['default']
@@ -81,7 +78,6 @@ export const Html: typeof import("../../../../node_modules/nuxt/dist/head/runtim
 export const Body: typeof import("../../../../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const LazyCartIcon: typeof import("../components/CartIcon.vue")['default']
 export const LazyFilterSidebar: typeof import("../components/FilterSidebar.vue")['default']
-export const LazyHeaderComponent: typeof import("../components/HeaderComponent.vue")['default']
 export const LazyLoadingSpinner: typeof import("../components/LoadingSpinner.vue")['default']
 export const LazyProductItem: typeof import("../components/ProductItem.vue")['default']
 export const LazyProductsList: typeof import("../components/ProductsList.vue")['default']

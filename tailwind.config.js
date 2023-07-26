@@ -9,12 +9,6 @@ module.exports = {
     ],
     theme: {
         extend: {
-            maxWidth: {
-                'middle': '1120px',
-            },
-            spacing: {
-                '4px': '4px',
-            },
             gridTemplateColumns: {
                 'n': 'repeat(auto-fit,minmax(230px, 1fr))',
             },
