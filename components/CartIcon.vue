@@ -1,5 +1,7 @@
 <template>
-  <div class="w-[24px] h-[24px] relative" :class="{'has-products': countProducts > 0}" :data-count="countProducts">
+  <div class="w-[24px] h-[24px] relative"
+       :class="{'after:top-[-15px] after:right-[-5px] after:absolute after:block after:content-[attr(data-count)]': countProducts > 0}"
+       :data-count="countProducts">
     <img src="../images/cart.svg" alt="">
   </div>
 </template>
@@ -44,12 +46,3 @@ onMounted( () => {
   store.updateCart(cart);
 });
 </script>
-
-<style scoped>
-
-.has-products::after {
-  content: attr(data-count);
-  @apply top-[-15px] right-[-5px] absolute block
-}
-
-</style>

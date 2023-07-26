@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div>
-      <div v-for="cart in getCart" :key="cart.id" class="cart-item flex justify-between py-4">
+      <div v-for="cart in getCart" :key="cart.id" class="border-t-[1px] border-[#2e475d] first:border-0 flex justify-between py-4">
         <div class="h-[156px] flex justify-center items-center w-1/4">
           <img class="max-h-full max-w-full object-cover" :src="cart.image" alt="">
         </div>
@@ -68,8 +68,3 @@ const removeProduct = (product) => {
 };
 </script>
 
-<style scoped>
-.cart-item + .cart-item {
-  @apply border-t-[1px] border-[#2e475d]
-}
-</style>

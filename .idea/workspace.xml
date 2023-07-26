@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1321dda-52b1-47c2-8418-9873b29e877b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/CartIcon.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/CartIcon.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/FilterSidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/FilterSidebar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/LoadingSpinner.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/LoadingSpinner.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ProductItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/ProductItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/SliderComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/SliderComponent.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error.vue" beforeDir="false" afterPath="$PROJECT_DIR$/error.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/cart.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/cart.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ProductsList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/ProductsList.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/CartPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/CartPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +77,7 @@
       <workItem from="1689226667409" duration="76121000" />
       <workItem from="1689771198899" duration="19000" />
       <workItem from="1689771246694" duration="1380000" />
-      <workItem from="1690199426627" duration="18173000" />
+      <workItem from="1690199426627" duration="21795000" />
     </task>
     <servers />
   </component>

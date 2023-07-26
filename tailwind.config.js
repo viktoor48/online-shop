@@ -15,6 +15,9 @@ module.exports = {
             spacing: {
                 '4px': '4px',
             },
+            gridTemplateColumns: {
+                'n': 'repeat(auto-fit,minmax(230px, 1fr))',
+            },
         },
     },
     plugins: [],

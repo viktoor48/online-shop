@@ -3,10 +3,10 @@
     <h2 class="text-xl font-bold">
       Список товаров
     </h2>
-    <div v-if="props.isFilter" class="grid gap-4 mt-4 grid-template-repeat">
+    <div v-if="props.isFilter" class="grid gap-4 mt-4 grid-cols-n">
       <ProductItem v-for="product in getFilteredProducts" :key="product.id" :product="product"/>
     </div>
-    <div v-else class="grid gap-4 mt-4 grid-template-repeat">
+    <div v-else class="grid gap-4 mt-4 grid-cols-n">
       <ProductItem v-for="product in getProducts" :key="product.id" :product="product"/>
     </div>
   </div>
@@ -67,9 +67,3 @@ onUnmounted(() => {
   window.removeEventListener("scroll", handleScroll);
 });
 </script>
-
-<style>
-.grid-template-repeat {
-  grid-template-columns: repeat(auto-fit,minmax(230px, 1fr));
-}
-</style>
