@@ -1,9 +1,3 @@
+.idea
 node_modules/
-
-.nuxt/
-
-logs/
-
-dist/
-
 .DS_Store
